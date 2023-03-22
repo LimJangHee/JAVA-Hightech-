@@ -14,4 +14,8 @@ public class IceCream {
 		System.out.println(name + "\t" + price);
 	}
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 196139048a225774d88807c4afc5b7f3ae8fc85f

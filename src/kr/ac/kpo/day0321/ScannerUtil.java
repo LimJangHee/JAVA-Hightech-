@@ -13,21 +13,22 @@ public class ScannerUtil {
 	// Scanner sc = new Scanner(System.in);
 	Scanner sc;
 	
-	ScannerUtil(){
+	public ScannerUtil(){
 		sc = new Scanner(System.in);
 	}
 	
-	char nextChar(String msg) {
+	public char nextChar(String msg) {
 		System.out.print(msg);
 		return sc.nextLine().charAt(0);
 	}
 	
-	int nextInt(String msg) {
+	public int nextInt(String msg) {
 		System.out.print(msg);
+		sc.nextLine();
 		return sc.nextInt();
 	}
 	
-	String nextStr(String msg) {
+	public String nextStr(String msg) {
 		System.out.print(msg);
 		return sc.nextLine();
 	}
