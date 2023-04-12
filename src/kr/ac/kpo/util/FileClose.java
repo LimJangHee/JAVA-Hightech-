@@ -2,6 +2,8 @@ package kr.ac.kpo.util;
 
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.Reader;
+import java.io.Writer;
 
 public class FileClose {
 	
@@ -33,6 +35,36 @@ public class FileClose {
 	public static void close(OutputStream bos, OutputStream os) {
 		close(bos);
 		close(os);
+	}
+	
+	public static void close(Writer w) {
+		try {
+			if(w != null) {
+				w.close();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void close(Reader r) {
+		try {
+			if(r != null) {
+				r.close();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void close(Writer bw, Writer w) {
+		close(bw);
+		close(w);
+	}
+	
+	public static void close(Reader br, Reader r) {
+		close(br);
+		close(r);
 	}
 
 }
